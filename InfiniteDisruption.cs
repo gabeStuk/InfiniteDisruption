@@ -47,6 +47,7 @@ namespace InfiniteDisruption
                 typeof(GM_API).GetEvent("NewLevel").RemoveEventHandler(null, NewLevelHook);
                 Debug.Log($"[ID] Unhooked 'NewLevel'");
             }
+            fragMods.Clear();
         };
 
         private static void PrintFMList(FragmentModifierSet fms)
